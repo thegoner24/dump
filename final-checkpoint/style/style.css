@@ -9,18 +9,17 @@ body {
     line-height: 1.6;
 }
 
-/* header {
-    background-color: #1f351d;
-    padding: 20px;
-    color: white;
-} */
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1f351d;
     padding: 10px;
+}
+
+.logo img {
+    width: 120px; 
+    height: auto;
 }
 
 .nav-links {
@@ -52,6 +51,7 @@ nav {
     background-color: white;
     transition: all 0.3s ease;
 }
+
 
 
 .hero {
@@ -106,7 +106,6 @@ nav {
     color: #555;
 }
 
-
 .services {
     padding: 60px 20px;
     text-align: center;
@@ -117,11 +116,14 @@ nav {
     margin-bottom: 40px;
 }
 
+
 .service-cards {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; 
     gap: 20px;
 }
+
 
 .service {
     background-color: white;
@@ -129,6 +131,12 @@ nav {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 30%;
+    transition: transform 0.3s ease;
+}
+
+
+.service:hover {
+    transform: scale(1.05);
 }
 
 .service h3 {
@@ -139,7 +147,6 @@ nav {
 .service p {
     color: #555;
 }
-
 
 .portfolio {
     padding: 60px 20px;
@@ -201,6 +208,7 @@ nav {
     display: flex;
     justify-content: space-around;
     gap: 20px;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
 }
 
 .member {
@@ -208,8 +216,30 @@ nav {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: 30%; /* Set a percentage width for flexibility */
     text-align: center;
+    transition: transform 0.3s ease; /* Add a subtle hover effect */
+}
+
+.member:hover {
+    transform: translateY(-5px); /* Lift up on hover */
+}
+
+.member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Circle shape for images */
+    margin-bottom: 15px;
+}
+
+.member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.member p {
+    font-size: 1rem;
+    color: #666;
 }
 
 .member img {
@@ -271,15 +301,6 @@ nav {
 }
 
 
-/* footer {
-    background-color: #1f351d;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 0.9rem;
-} */
-
-
 
 footer {
     text-align: center;
@@ -312,5 +333,85 @@ footer {
 
     .hamburger {
         display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    .service {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .service {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 992px) {
+    .team h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .team-members {
+        justify-content: space-between; /* Adjust space between for smaller screens */
+    }
+
+    .member {
+        width: 45%; /* Two-column layout for tablets */
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile screens (below 768px) */
+@media (max-width: 768px) {
+    .team h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .team-members {
+        flex-direction: column; /* Single column layout for small screens */
+        align-items: center;
+    }
+
+    .member {
+        width: 80%; /* Full width for mobile */
+    }
+
+    .member img {
+        width: 60%; /* Reduce image size for mobile */
+    }
+
+    .member h3 {
+        font-size: 1.3rem;
+    }
+
+    .member p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra small screens (below 480px) */
+@media (max-width: 480px) {
+    .team {
+        padding: 40px 10px;
+    }
+
+    .team h2 {
+        font-size: 1.5rem;
+    }
+
+    .member h3 {
+        font-size: 1.2rem;
+    }
+
+    .member p {
+        font-size: 0.85rem;
+    }
+
+    .member img {
+        width: 50%; /* Further reduce image size */
     }
 }
