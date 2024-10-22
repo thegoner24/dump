@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevoU - Guntur</title>
+    <meta description="RevoU Guntur">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <nav>
+        <img align="left" src="../assets/img/RevoU Youtube Thumbnail (1).png"  alt="Logo" height="50" width="140">
+        <ul align="right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>This is my assignment for RevoU 1st milestones. <br> I'll be using HTML only to make this page</p>
+        </section>
+
+        <div class="picture-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVl-P-ssiv7vl86lROibzWI3YHxEVMbN89_w&s" alt="Croissant">
+            <img src="https://flash-coffee.com/id/wp-content/uploads/sites/13/2023/06/SPICY-CROQUE-MONSIEUR-600x375.png" alt="Sandwich">
+            <img src="https://flash-coffee.com/id/wp-content/uploads/sites/13/2023/06/CINNAMON-ROLL.png" alt="Cinnamon Roll">
+        </div>
+
+        <section>
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+
+                <label for="service">Choose a service:</label>
+                <select id="service" name="service">
+                    <option value="dine-In">Dine-In</option>
+                    <option value="delivery">Delivery</option>
+                </select><br><br>
+
+                <label>
+                    <input type="radio" name="contact_method" value="email" required> Email
+                </label>
+                <label>
+                    <input type="radio" name="contact_method" value="phone"> Phone
+                </label><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 RevoU-Guntur.</p>
+    </footer>
+</body>
+</html>
