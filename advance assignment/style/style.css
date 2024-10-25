@@ -228,7 +228,7 @@ nav {
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    flex-wrap: wrap; 
 }
 
 .member {
@@ -236,19 +236,19 @@ nav {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%; /* Set a percentage width for flexibility */
+    width: 30%; 
     text-align: center;
-    transition: transform 0.3s ease; /* Add a subtle hover effect */
+    transition: transform 0.3s ease; 
 }
 
 .member:hover {
-    transform: translateY(-5px); /* Lift up on hover */
+    transform: translateY(-5px); 
 }
 
 .member img {
     width: 100%;
     height: auto;
-    border-radius: 50%; /* Circle shape for images */
+    border-radius: 50%; 
     margin-bottom: 15px;
 }
 
