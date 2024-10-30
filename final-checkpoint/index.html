@@ -12,14 +12,15 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="assets/img/logo.png" alt="Company Logo">
+                <img src="../assets/img/RevoU Youtube Thumbnail (1).png" alt="Company Logo">
             </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about-us">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -37,12 +38,12 @@
         </div>
     </section>
 
-    <section class="about-us" align="center">
+    <section class="about-us" id="about-us" align="center">
         <h2>About Us</h2>
         <p>At Enclosure Agency, we believe in the power of digital transformation to drive business success. Our philosophy is built on the principles of innovation, integrity, and collaboration. We are committed to delivering tailored digital marketing solutions that not only meet but exceed our clients' expectations.</p>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <h2>Our Services</h2>
         <div class="service-cards">
             <div class="service">
@@ -60,8 +61,7 @@
         </div>
     </section>
 
-
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
     <h2>Our Portfolio</h2>
     <div class="portfolio-grid">
         <div class="portfolio-item">
@@ -88,7 +88,7 @@
 </section>
 
 
-    <section class="team">
+    <section class="team" id="team">
         <h2>Meet Our Team</h2>
         <div class="team-members">
             <div class="member">
@@ -111,7 +111,7 @@
 
 
 
-<section class="contact-us">
+<section class="contact-us" id="contact">
     <h2>Contact Us</h2>
     <form action="#" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
@@ -122,7 +122,7 @@
             <h3>Choose a Service</h3>
             <select name="service" required>
                 <option value="" disabled selected>Select a service</option>
-                <option value="Service 1">Web Devlopment</option>
+                <option value="Service 1">Web Development</option>
                 <option value="Service 2">Photography</option>
                 <option value="Service 3">Videography</option>
             </select>
@@ -133,20 +133,9 @@
     </form>
 </section>
 
-
-
-
     <footer>
         <p>© 2024 Guntur-RevoU. All rights reserved.</p>
     </footer>
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
-        });
-    </script>
 </body>
 
 </html>
